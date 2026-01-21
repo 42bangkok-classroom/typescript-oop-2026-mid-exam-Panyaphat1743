@@ -2,7 +2,7 @@ const comment = "TypeScript is a strongly typed programming language"
 let str:string[] = []
 let res:string =""
 
-function shortenComment(comment: string): string {
+export function shortenComment(comment: string): string {
   str = comment.split(" ")
 
   for(let i =0;i<str.length;i++){
