@@ -1,7 +1,14 @@
 export function getUniqueNumbers(arr1: number[], arr2: number[]): number[] {
 let inters:number[]=[]
 let re:number[] =[]
-  let spac:number[] = []
+  let newar1:number[] = []
+  for(let t = 0;t<arr1.length;t++){
+    for(let r = 0;r<arr1.length;r++){
+      if(arr1[t] == arr1[r]){
+        newar1 = [...newar1,]
+      }
+    }
+  }
   for(let i =0;i<arr1.length;i++){
     for(let y =0;y<arr2.length;y++)
     if(arr1[i] == arr2[y]){
@@ -23,6 +30,6 @@ let re:number[] =[]
   return re
 }
 
-const arr1 = [1, 2, 3, 4];
-const arr2 = [3, 4, 5, 6];
-console.log(getUniqueNumbers([1, 2, 3, 4],[3, 4, 5, 6]))
+const arr1 = [3, 4];
+const arr2 = [3, 4];
+console.log(getUniqueNumbers([3, 4],[3, 4]))
